@@ -1,0 +1,28 @@
+{
+  "name": "express_test",
+  "version": "0.0.0",
+  "description": "This example app is so cool.",
+  "main": "express_test.js",
+  "dependencies": 
+	{
+	    "express": "~4.7.2",
+	    "mongoose": "~3.8.14"
+	},
+  "scripts": 
+  {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bocaguy/icg_octave.git"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Keith Garsson",
+  "license": "ICG",
+  "bugs": {
+    "url": "https://github.com/bocaguy/icg_octave/issues"
+  }
+}
