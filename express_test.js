@@ -1,11 +1,32 @@
 var express = require("express");
-var logfmt = require("logfmt");
 var app = express();
 
-app.use(logfmt.requestLogger());
+//var logfmt = require("logfmt");
+//app.use(logfmt.requestLogger());
 
-app.get('/', function(req, res) {
-  res.send('SFTL Version Cloud 9/GtHub Version');
+// Mongoose
+var mongoConnectionString = 'mongodb://octave_user:#_Clobber8@ :48173,iad-c11-1.objectrocket.com:48173/db1'
+var mongoose = require('mongoose');
+mongoose.connect(mongoConnectionString);
+var Schema = mongoose.Schema;
+
+var schemaDealInfo = new Schema({
+  Client: String,
+  Deal: String,
+  LoanCount: Number
+}, 
+  { collection : 'DealInfo' }
+);
+
+var deal = mongoose.model('DealInfo', schemaDealInfo);
+
+app.get('/', function(req, res) 
+{
+      deal.find({ Deal: 'ACE' }, function(err, dealFound) 
+      {
+        if (err) throw err;
+        res.send(dealFound);
+      });
 });
 
 var port = Number(process.env.PORT || 5000);

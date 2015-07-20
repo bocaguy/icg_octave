@@ -1,12 +1,14 @@
 {
-  "name": "express_test",
+  "name": "icg_octave",
   "version": "0.0.0",
-  "description": "This example app is so cool.",
+  "description": "Mongo Express Mongoose",
   "main": "express_test.js",
   "dependencies": 
 	{
-	    "express": "~4.7.2",
-	    "mongoose": "~3.8.14"
+      "express": "~3.2.4",
+      "mongodb": "~1.4.38",
+      "mongoose": "~4.0.7",	    
+	    "logfmt": "~1.1.2"
 	},
   "scripts": 
   {
