@@ -25,7 +25,7 @@ app.get('/', function(req, res)
       deal.find({ Deal: 'ACE' }, function(err, dealFound) 
       {
         if (err) throw err;
-        res.send(dealFound);
+        res.send("These are the deals that were found" + dealFound);
       });
 });
 
