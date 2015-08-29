@@ -5,10 +5,20 @@
   "main": "express_test.js",
   "dependencies": 
 	{
-      "express": "~3.2.4",
+  	  "mysql": "latest",
+      "express": "~3.4.4",
       "mongodb": "~1.4.38",
       "mongoose": "~4.0.7",	    
-	    "logfmt": "~1.1.2"
+      "angular": "~1.4.3",
+	    "logfmt": "~1.1.2",
+      "ejs": "~0.8.5",         
+      "passport": "~0.1.17",     
+      "passport-local" : "~0.1.6",  
+      "connect-flash" : "~0.1.1",   
+      "bcrypt-nodejs" : "latest",
+      "sequelize" : "latest",
+      "pg" : "latest", 
+      "pg-hstore" : "latest"
 	},
   "scripts": 
   {
