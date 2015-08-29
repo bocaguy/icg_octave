@@ -1,0 +1,32 @@
+{
+  "development": {
+    "username": "livestor_user_1",
+    "password": "KGphl7628%",
+    "database": "livestor_dp_1",
+    "host": "siteground333.com",
+    "dialect": "mysql",
+    "dialectOptions": {
+        "insecureAuth": true
+    }
+  },
+  "test": {
+    "username": "livestor_user_1",
+    "password": "KGphl7628%",
+    "database": "livestor_dp_1",
+    "host": "siteground333.com",
+    "dialect": "mysql",
+    "dialectOptions": {
+        "insecureAuth": true
+    }
+  },
+  "production": {
+    "username": "livestor_user_1",
+    "password": "KGphl7628%",
+    "database": "livestor_dp_1",
+    "host": "siteground333.com",
+    "dialect": "mysql",
+    "dialectOptions": {
+        "insecureAuth": true
+    }
+  }
+}
